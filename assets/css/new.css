@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url(../images/3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+p {
+  color: #fff;
+}
+
+#logo1 {
+  width: 200px;
+  height: 72px;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.dark {
+  display: flex;
+  height: 80px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 65px;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  box-shadow: -4px 16px 36px 7px rgba(255, 255, 255, 0.2);
+
+}
+
+.dark .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+
+}
+
+.dark ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.dark ul li {
+  margin: 0 5px;
+}
+
+.dark ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+
+.dark ul li a:hover {
+  color: #000;
+  background: #c5c6c7;
+}
+
+.dark .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+content {
+  width: 120%;
+  height: 100vh;
+  margin-right: 10px;
+  background: rgb(rgb(30, 30, 30), green, blue);
+}
+
+
+@media (max-width: 1000px) {
+  .dark {
+    padding: 0 40px 0 50px;
+  }
+}
+
+@media (max-width: 920px) {
+  .dark .menu-btn i {
+    display: block;
+  }
+
+  #click:checked~.menu-btn i:before {
+    content: "\f00d";
+  }
+
+  .dark ul {
+    position: fixed;
+    margin-top: 63px;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked~ul {
+    left: 0;
+  }
+
+  .dark ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  .dark ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked~ul li a {
+    margin-left: 0px;
+  }
+
+  .dark ul li a:hover {
+    background: #c5c6c7;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+
+.content div {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 100vh;
+}
+
+#copy {
+
+  background-color: rgb(0, 0, 0);
+}
+
+#foot {
+  width: 90%;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -4px 9px 63px 32px rgba(255, 255, 255, 0.2);
+}
+
+.mb-4 a:hover {
+  color: #000;
+  background: #ed563b;
+}
+
+.mb-4 h1 b {
+  position: relative;
+}
+
+.mb-4 h1 b:hover {
+  top: -5px;
+}
+
+/* #foot-head{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding:0;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+} */
+h3 {
+  margin-left: 10px;
+}
+
+#contact {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.links li:hover {
+  color: #fff;
+  background: #ed563b;
+  border-radius: 30px;
+}
